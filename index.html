@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <header>
+      <h2>Checkout</h2>
+    </header>
+    <section class="container">
+      <div class="form">
+        <form action="GET" class="my-form">
+          <p>Contact information</p>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="PhoneNumber">Phone</label>
+            <span class="icon"><i class="fa-solid fa-phone"></i></span>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="Enter your phone"
+            />
+          </div>
+
+          <p>Shipping address</p>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <span class="icon"><i class="fa-solid fa-user"></i></span>
+            <input type="text" name="name" id="name" placeholder="Name" />
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address</label>
+            <span class="icon"><i class="fa-solid fa-house"></i></span>
+            <input
+              type="text"
+              name="Address"
+              id="address"
+              placeholder="Your Address"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="city">City</label>
+            <span class="icon"><i class="fa-solid fa-city"></i></span>
+            <input type="text" name="city" id="city" placeholder="Your City" />
+          </div>
+
+          <div class="inline">
+            <div class="form-group country">
+              <label for="country">Country</label>
+              <span class="icon"><i class="fa-solid fa-earth-asia"></i></span>
+              <select name="country" id="country">
+                <option value="Country" disabled selected>Your Country</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="China">China</option>
+                <option value="India">India</option>
+              </select>
+            </div>
+            <div class="form-group postalCode">
+              <label for="postalCode">Postal code</label>
+              <span class="icon"><i class="fa-solid fa-paper-plane"></i></span>
+              <input type="number" name="postalCode" id="postal" />
+            </div>
+          </div>
+        </form>
+        <div class="checkbox">
+          <input type="checkbox" name="save for later" id="save"> Save this information for next time.
+        </div>
+         
+        <button type="submit" class="btn btn-primary">Continue</button>
+      </div>
+
+      <div class="order">
+        <div class="box" id="box-1">
+          <img src="./images/photo1.png" alt="" />
+          <div class="info">
+            <h4>Vinatge Bagpack</h4>
+            <p>
+              $54.99 <span> <strike>$94.99</strike> </span>
+            </p>
+            <h5 class="number"> <span class="plus-symbol">+</span> 1 <span class="minus-symbol">-</span> </h5>
+          </div>
+        </div>
+
+        <div class="box" id="box-2">
+          <img src="./images/photo2.png" alt="" />
+          <div class="info">
+            <h4>Levi Shoes</h4>
+            <p>
+              $74.99 <span> <strike>$124.99</strike> </span>
+            </p>
+            <h5 class="number"> <span class="plus-symbol">+</span> 1 <span class="minus-symbol">-</span> </h6>
+          </div>
+        </div>
+        <div class="price">
+          <h5>Shipping</h5>
+          <p>$19</p>
+        </div>
+        <div class="price">
+          <h5>Total</h5>
+          <p>$148.98</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
